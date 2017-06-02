@@ -24,7 +24,7 @@ body a {
 }
 
 h2 {
-  background: #00B7D3;
+  background: #0B1942;
   color: #FFFFFF;
 }
 
@@ -58,12 +58,12 @@ footer nav {
   background: #F5005B;
   width: 30vw;
   height: 21vh;
-  padding: 1vh 1vw;
+  padding: 2vh 2vw;
 }
 
 .logo img {
-  width: 28vw;
-  height: 19vh;
+  width: 26vw;
+  height: 17vh;
 }
 
 .nav-row {
@@ -101,3 +101,5 @@ footer nav {
   justify-content: center;
   align-items: center;
 }
+
+/*Body Styling for Home, mobile focus*/
