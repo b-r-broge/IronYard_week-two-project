@@ -23,11 +23,6 @@ body a {
   color: #00B7D3;
 }
 
-h2 {
-  background: #0B1942;
-  color: #FFFFFF;
-}
-
 /*Starting Generic Header and footer work*/
 /*Always mobile first*/
 
@@ -74,7 +69,7 @@ footer nav {
 .nav-row a {
   color: #FFF;
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 2.5vh;
   height: 7vh;
   display: flex;
   justify-content: center;
@@ -103,3 +98,70 @@ footer nav {
 }
 
 /*Body Styling for Home, mobile focus*/
+
+h1 {
+  font-size: 5vh;
+  font-weight: lighter;
+}
+
+h2 {
+  background: #0B1942;
+  color: #FFFFFF;
+  font-size: 4vh;
+  font-weight: lighter;
+  margin: 2.5vh 0;
+  padding: .5vh 4vw;
+}
+
+p {
+  font-size: .83em;
+  line-height: 2.25em;
+}
+
+.get-involved {
+  padding: 3vh 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.up-next {
+  background: #0B1942;
+  padding: 2vh 2vw;
+}
+
+/*Rashomon Tile styling*/
+.rashomon {
+  background: #E2E2E2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vh 4vw;
+  grid-template-areas:
+    "poster title"
+    "poster rating"
+    "poster hr"
+    "poster discuss"
+    "poster list";
+
+    /*display: flex;
+    justify-content: space-around;*/
+}
+
+.rash-poster {
+  height: 40vh;
+  grid-area: poster;
+  width: 45vw;
+  background: url("../images/rashomon-poster.jpg") center/cover no-repeat;
+  /*background-size: auto;*/
+  margin: 4vh 4vw;
+}
+
+.rash-content {
+  /*justify-self: flex-start;*/
+  margin: 4vh 0;
+  line-height: 6rem;
+}
+
+.rashomon a {
+  font-size: 3vh;
+}
