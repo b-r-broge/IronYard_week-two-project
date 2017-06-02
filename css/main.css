@@ -1,0 +1,103 @@
+/*Some basic reset and global code*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: 'PT Sans';
+  background: transparent;
+}
+
+body {
+  color: #0B1942;
+}
+
+body a {
+  color: #00B7D3;
+}
+
+h2 {
+  background: #00B7D3;
+  color: #FFFFFF;
+}
+
+/*Starting Generic Header and footer work*/
+/*Always mobile first*/
+
+header {
+  display: flex;
+  height: 21vh;
+  width: 100vw;
+  background: #7DDFE8;
+}
+
+footer {
+  background: #7DDFE8;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  width: 70vw;
+}
+
+footer nav {
+  width: 100vw;
+}
+
+.logo {
+  background: #F5005B;
+  width: 30vw;
+  height: 21vh;
+  padding: 1vh 1vw;
+}
+
+.logo img {
+  width: 28vw;
+  height: 19vh;
+}
+
+.nav-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-row a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 3vh;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  background: #00A5BF;
+}
+
+.calendar {
+  background: #00B7D3;
+}
+
+.join {
+  background: #00D5E7;
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-size: 3vh;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
