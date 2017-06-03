@@ -35,7 +35,7 @@ header {
 
 footer {
   background: #7DDFE8;
-  height: 30vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +91,7 @@ footer nav {
 .copyright {
   color: #FFFFFF;
   font-size: 3vh;
-  height: 9vh;
+  height: 14vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,6 +128,7 @@ p {
 .up-next {
   background: #0B1942;
   padding: 2vh 2vw;
+  padding-bottom: 5vh;
 }
 
 /*Rashomon Tile styling*/
@@ -144,7 +145,7 @@ p {
 .rash-poster {
   height: 40vh;
   grid-area: poster;
-  background: url("../images/rashomon-poster.jpg") center/cover no-repeat;
+  background: url("../images/rashomon-poster.jpg") center/contain no-repeat;
 }
 
 .rash-content {
@@ -173,4 +174,43 @@ h6 {
 
 .date {
   font-weight: bold;
+}
+
+/*Next Movie tiles*/
+
+.next-movies {
+  margin-top: 2vh;
+  background: #E2E2E2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2vh 4vw;
+  grid-template-areas:
+    "train bike"
+    "nosf metro";
+  padding: 2vh 4vw;
+  line-height: 4rem;
+}
+
+.next-movies a {
+  font-size: .90em;
+}
+.poster {
+  height: 35vh;
+}
+
+.train-poster {
+  background: url("../images/great-train-poster.jpg") center/contain no-repeat;
+}
+
+.bike-poster {
+  background: url("../images/bicycle-thief-poster.jpg") center/contain no-repeat;
+}
+
+.nos-poster {
+  background: url("../images/nosferatu-poster.jpg") center/contain no-repeat;
+}
+
+.metro-poster {
+  background: url("../images/metropolis-poster.jpg") center/contain no-repeat;
 }
