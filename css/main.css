@@ -135,33 +135,42 @@ p {
   background: #E2E2E2;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2vh 4vw;
+  grid-gap: 2vh 2vw;
   grid-template-areas:
-    "poster title"
-    "poster rating"
-    "poster hr"
-    "poster discuss"
-    "poster list";
-
-    /*display: flex;
-    justify-content: space-around;*/
+    "poster title";
+  padding: 4vh 4vw;
 }
 
 .rash-poster {
   height: 40vh;
   grid-area: poster;
-  width: 45vw;
   background: url("../images/rashomon-poster.jpg") center/cover no-repeat;
-  /*background-size: auto;*/
-  margin: 4vh 4vw;
 }
 
 .rash-content {
-  /*justify-self: flex-start;*/
-  margin: 4vh 0;
-  line-height: 6rem;
+  margin: 0 4vw;
+  line-height: 5.5rem;
 }
 
 .rashomon a {
   font-size: 3vh;
+}
+
+.rash-content ul {
+  margin-left: 4em;
+  list-style-type: circle;
+}
+
+h5 {
+  font-weight: normal;
+}
+
+h6 {
+  padding-top: 1.5vh;
+  margin-top: 1.5vh;
+  box-shadow: 0 -4px 1px -2px #000;
+}
+
+.date {
+  font-weight: bold;
 }
