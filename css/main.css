@@ -28,7 +28,7 @@ body a {
 
 header {
   display: flex;
-  height: 21vh;
+  height: 18vh;
   background: #7DDFE8;
 }
 
@@ -51,7 +51,7 @@ footer nav {
 .logo {
   background: #F5005B;
   width: 30vw;
-  height: 21vh;
+  height: 18vh;
   padding: 2vh 2vw;
 }
 
@@ -69,7 +69,7 @@ footer nav {
   color: #FFF;
   text-decoration: none;
   font-size: 2.5vh;
-  height: 7vh;
+  height: 6vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,6 +265,71 @@ h6 {
 }
 
 /*Join page specifinc mobile styling*/
+.join-area {
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 5vw;
+  line-height: 1.4rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  border: 1px solid #e2e2e2;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  margin-bottom: 2vh;
+  font-size: 1.25em;
+}
+
+label {
+  margin-bottom: .5em;
+}
+
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.profile input {
+  width: 100%;
+}
+
+.pro-picture {
+  background: url("../images/profile-placeholder.png") center/cover no-repeat;
+  margin: 2.5vh auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.interests {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  line-height: 2.2em;
+  margin: 2vh 0;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 4vh 0;
+}
+
+input[type="submit"] {
+  width: 30vw;
+  height: 10vh;
+  background: #F5005B;
+  color: #FFFFFF;
+  margin-top: 5vh;
+}
+
+textarea {
+  height: 3em;
+  width: 100%;
+  border: 1px solid #999;
+}
 
 /*TABLET STYLING*/
 @media screen and (min-width: 545px) {
@@ -350,6 +415,34 @@ h6 {
 
   /*Join styling for tablets*/
 
+  .profile {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "profile-picture profile-name"
+      "profile-picture profile-pass";
+  }
+
+  .profile-picture {
+    grid-area: profile-picture;
+  }
+
+  .profile-name {
+    grid-area: profile-name;
+  }
+
+  .profile-pass {
+    grid-area: profile-pass;
+  }
+
+  .interests {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  input[type="submit"] {
+    width: 20vw;
+    font-weight: bold;
+  }
 }
 
 /*Start media styling for larger (desktop) screens*/
@@ -450,4 +543,27 @@ h6 {
 
   /*Join specific desktop styling*/
 
+  .profile {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "profile-picture profile-name profile-pass"
+      "profile-picture . .";
+    grid-gap: 0 2vw;
+    font-size: 1.2em;
+  }
+
+  .interests {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.2em;
+  }
+
+  textarea {
+    width: 67%;
+  }
+
+  input[type="submit"] {
+    width: 15vw;
+    font-size: 1.2em;
+  }
 }
