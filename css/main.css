@@ -266,8 +266,12 @@ h6 {
 
 /*Join page specifinc mobile styling*/
 .join-area {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
+  padding: 4vh 5vw;
+  line-height: 1.4rem;*/
+  display: grid;
+  grid-template-columns: 1fr;
   padding: 4vh 5vw;
   line-height: 1.4rem;
 }
@@ -426,20 +430,14 @@ textarea {
 
   .profile-picture {
     grid-area: profile-picture;
-    /*grid-column: 1;
-    grid-row: 1 / 3;*/
   }
 
   .profile-name {
     grid-area: profile-name;
-    /*grid-column: 2;
-    grid-row: 1;*/
   }
 
   .profile-pass {
     grid-area: profile-pass;
-    /*grid-column: 2;
-    grid-row: 2;*/
   }
 
   .interests {
@@ -454,7 +452,7 @@ textarea {
 
 /*Start media styling for larger (desktop) screens*/
 @media (min-width: 769px) {
-  /*Desktop Styling for header/footer*/
+  /*Desktop Styling for header and footer*/
 
   header {
     height: 15vh;
@@ -508,7 +506,7 @@ textarea {
 
   .rash-poster {
     height: 100%;
-    width: 100%
+    width: 100%;
   }
 
   .rash-content {
